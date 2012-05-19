@@ -1,4 +1,18 @@
 CitApp::Application.routes.draw do
+  resources :readmsgs
+
+  resources :userprivileges
+
+  resources :temporaryaccounts
+
+  resources :messages
+
+  resources :topics
+
+  resources :clients
+
+  resources :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

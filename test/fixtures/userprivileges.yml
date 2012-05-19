@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  client: 
+  privilegeLevel: 1
+  user: 
+
+two:
+  client: 
+  privilegeLevel: 1
+  user: 

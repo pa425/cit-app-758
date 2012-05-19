@@ -1,0 +1,4 @@
+class TemporaryAccount < ActiveRecord::Base
+  belongs_to :client
+  attr_accessible :email
+end

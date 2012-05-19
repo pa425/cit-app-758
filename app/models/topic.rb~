@@ -1,0 +1,5 @@
+class Topic < ActiveRecord::Base
+  belongs_to :client
+  belongs_to :user
+  attr_accessible :body, :numMsgs, :title
+end

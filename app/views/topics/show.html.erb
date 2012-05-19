@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nummsgs:</b>
+  <%= @topic.numMsgs %>
+</p>
+
+<p>
+  <b>Client:</b>
+  <%= @topic.client %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @topic.title %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @topic.user %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @topic.body %>
+</p>
+
+
+<%= link_to 'Edit', edit_topic_path(@topic) %> |
+<%= link_to 'Back', topics_path %>

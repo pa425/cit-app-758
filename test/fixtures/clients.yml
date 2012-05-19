@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  firstName: MyString
+  isMale: false
+  lastName: MyString
+
+two:
+  firstName: MyString
+  isMale: false
+  lastName: MyString

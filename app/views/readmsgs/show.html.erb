@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nummsgsread:</b>
+  <%= @readmsg.numMsgsRead %>
+</p>
+
+<p>
+  <b>Topic:</b>
+  <%= @readmsg.topic %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @readmsg.user %>
+</p>
+
+
+<%= link_to 'Edit', edit_readmsg_path(@readmsg) %> |
+<%= link_to 'Back', readmsgs_path %>

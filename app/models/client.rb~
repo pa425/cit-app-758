@@ -1,0 +1,7 @@
+class Client < ActiveRecord::Base
+
+	has_many :topics
+	
+  attr_accessible :firstName, :isMale, :lastName  
+  
+end

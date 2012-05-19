@@ -1,0 +1,27 @@
+<h1>Listing readmsgs</h1>
+
+<table>
+  <tr>
+    <th>Nummsgsread</th>
+    <th>Topic</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @readmsgs.each do |readmsg| %>
+  <tr>
+    <td><%= readmsg.numMsgsRead %></td>
+    <td><%= readmsg.topic %></td>
+    <td><%= readmsg.user %></td>
+    <td><%= link_to 'Show', readmsg %></td>
+    <td><%= link_to 'Edit', edit_readmsg_path(readmsg) %></td>
+    <td><%= link_to 'Destroy', readmsg, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Readmsg', new_readmsg_path %>

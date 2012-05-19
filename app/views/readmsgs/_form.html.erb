@@ -1,0 +1,29 @@
+<%= form_for(@readmsg) do |f| %>
+  <% if @readmsg.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@readmsg.errors.count, "error") %> prohibited this readmsg from being saved:</h2>
+
+      <ul>
+      <% @readmsg.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :numMsgsRead %><br />
+    <%= f.number_field :numMsgsRead %>
+  </div>
+  <div class="field">
+    <%= f.label :topic %><br />
+    <%= f.text_field :topic %>
+  </div>
+  <div class="field">
+    <%= f.label :user %><br />
+    <%= f.text_field :user %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

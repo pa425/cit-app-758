@@ -1,0 +1,27 @@
+<h1>Listing userprivileges</h1>
+
+<table>
+  <tr>
+    <th>Client</th>
+    <th>Privilegelevel</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @userprivileges.each do |userprivilege| %>
+  <tr>
+    <td><%= userprivilege.client %></td>
+    <td><%= userprivilege.privilegeLevel %></td>
+    <td><%= userprivilege.user %></td>
+    <td><%= link_to 'Show', userprivilege %></td>
+    <td><%= link_to 'Edit', edit_userprivilege_path(userprivilege) %></td>
+    <td><%= link_to 'Destroy', userprivilege, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Userprivilege', new_userprivilege_path %>

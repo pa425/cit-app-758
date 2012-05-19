@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Client:</b>
+  <%= @userprivilege.client %>
+</p>
+
+<p>
+  <b>Privilegelevel:</b>
+  <%= @userprivilege.privilegeLevel %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @userprivilege.user %>
+</p>
+
+
+<%= link_to 'Edit', edit_userprivilege_path(@userprivilege) %> |
+<%= link_to 'Back', userprivileges_path %>

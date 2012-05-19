@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  numMsgs: 1
+  client: 
+  title: MyString
+  user: 
+  body: MyText
+
+two:
+  numMsgs: 1
+  client: 
+  title: MyString
+  user: 
+  body: MyText

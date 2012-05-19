@@ -1,0 +1,29 @@
+<%= form_for(@userprivilege) do |f| %>
+  <% if @userprivilege.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@userprivilege.errors.count, "error") %> prohibited this userprivilege from being saved:</h2>
+
+      <ul>
+      <% @userprivilege.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :client %><br />
+    <%= f.text_field :client %>
+  </div>
+  <div class="field">
+    <%= f.label :privilegeLevel %><br />
+    <%= f.number_field :privilegeLevel %>
+  </div>
+  <div class="field">
+    <%= f.label :user %><br />
+    <%= f.text_field :user %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
